@@ -1,0 +1,38 @@
+<div class="container bg-{{calculatorFunctions.getOption}}">
+  <div class="calculator">
+
+    <div class="calc-heading calc-text-color-{{calculatorFunctions.getOption}} disable-highlight">
+      <h2>calc</h2>
+      <div class="theme-container">
+          <p (click)="onDesignChange()">
+            <span *ngFor="let i of [1,2,3]">{{i}}</span>
+          </p>
+        <div class="row">
+          <p (click)="onDesignChange()">THEME</p>
+          <div (click)="onDesignChange()" [appThemeOption]="calculatorFunctions.getCurrentOption" class="slider calc-content-{{calculatorFunctions.getOption}}">
+            <div class="ball btn-ball-{{calculatorFunctions.getOption}}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="calc-content calc-content-{{calculatorFunctions.getOption}}">
+        <p class="number-header number-header-theme-{{calculatorFunctions.getOption}} disable-highlight">{{calculatorFunctions.getFirstValue}} {{calculatorFunctions.getOperator}}</p>
+        <p class="number-content calc-text-color-{{calculatorFunctions.getOption}}">
+          {{calculatorFunctions.getAllValues === '' ? 0 : calculatorFunctions.getAllValues}}
+        </p>
+    </div>
+
+    <div class="calc-body calc-body-{{calculatorFunctions.getOption}} disable-highlight" >
+      <div class="square-buttons">
+        <div *ngFor="let btn of btns; let i = index" class="flex-item {{btn.parentClass}}">
+          <button (click)="onPress(btn.name)"
+          class="btn {{btn.buttonClass}} btn-{{btn.color}}-{{calculatorFunctions.getOption}}"
+          >{{btn.name}}</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

@@ -1,0 +1,333 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', Arial, Helvetica, sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator{
+  width: 600px;
+  height: 800px;
+  padding: 30px;
+}
+
+
+.calculator .calc-heading{
+  width: 100%;
+  display: flex;
+}
+
+.calculator .calc-heading h2{
+  font-size: 32px;
+  margin: 30px 0;
+  width: 50%;
+  margin: 20px 0;
+}
+
+.calculator .calc-heading .theme-container{
+  width: 50%;
+  padding: 10px 0;
+}
+
+
+.calculator .calc-heading .theme-container > p{
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.calculator .calc-heading .theme-container > p span{
+  display: inline-block;
+  margin: 0 7.5px;
+}
+
+.calculator .calc-heading .theme-container .row{
+  width: 100%;
+  display: flex;
+  align-items: center;  
+  justify-content: flex-end;
+}
+
+.calculator .calc-heading .theme-container .row > p{
+  font-size: 14px;
+  width: 70px;
+  cursor: pointer;
+}
+
+.calculator .calc-heading .theme-container .row .slider{
+  cursor: pointer;
+  width: 70px;
+  height: 25px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+
+.calculator .calc-heading .theme-container .row .ball{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+
+
+
+.calculator .calc-content{
+ width: 100%;
+ height: 130px;
+ border-radius: 15px;
+ margin: 30px 0;
+ padding: 10px 20px;
+}
+
+
+.calculator .calc-content .number-header{
+  text-align: right;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.calculator .calc-content .number-content{
+  text-align: right;
+  font-size: 48px;
+  line-height: 1em;
+}
+
+.calculator .calc-body{
+ width: 100%;
+ height: 480px;
+ border-radius: 15px;
+ margin: 30px 0;
+ padding: 18px 17.5px;
+}
+
+.calculator .calc-body .square-buttons{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calculator .calc-body .square-buttons .flex-item{
+  /* height: 88.8px; */
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator .calc-body .square-buttons .square-container{
+  /* flex-basis: 126.25px; */
+  flex-basis: 25%;
+}
+
+.calculator .calc-body .square-buttons .rect-container{
+  /* flex-basis: 252.5px; */
+  flex-basis: 50%;
+}
+
+.calculator .calc-body .square-buttons .flex-item .btn{
+  font-size: 24px;
+  /* height: 60px; */
+  height: 67.56%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.calculator .calc-body .square-buttons .flex-item .btn:active{
+ transform: translateY(4px);
+ box-shadow: none;
+}
+
+.btn-sm{
+   /* width: 100px;  */
+   width: 79.2%; 
+}
+
+.btn-rect{
+  /* width: 226.25px ; */
+  width: 89.6%;
+}
+
+
+/* THEME 1*/
+.bg-1{
+  background: hsl(222, 26%, 31%);
+}
+
+
+/* Inside calc content */
+.calc-content-1{
+  background: hsl(224, 36%, 15%);
+}
+
+.calc-body-1{
+  background: hsl(223, 31%, 20%);
+}
+
+.number-header-theme-1{
+  color: hsl(225, 21%, 49%);
+}
+
+.calc-text-color-1{
+  color: #fff;
+}
+
+.btn-primary-1{
+  box-shadow: 0px 5px hsl(28, 16%, 65%);
+  background: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+}
+
+.btn-secondary-1{
+  box-shadow: 0px 5px hsl(224, 28%, 35%);
+  background: hsl(225, 21%, 49%);
+  color:hsl(30, 25%, 89%);
+}
+
+.btn-ball-1,.btn-warning-1{
+   background: hsl(6, 63%, 50%);
+}
+
+.btn-warning-1{
+  box-shadow: 0px 5px hsl(6, 70%, 34%);
+  color:white;
+}
+
+
+
+/* THEME 2*/
+.bg-2{
+  background: hsl(0, 0%, 90%);
+}
+
+
+/* Calc heading */
+.calc-text-color-2{
+   color: #000;
+}
+
+
+/* Inside calc content */
+.calc-content-2{
+  background: hsl(0, 0%, 93%);
+}
+
+.calc-body-2{
+  background: hsl(0, 5%, 81%);
+}
+
+.number-header-theme-2{
+  color: #333;
+}
+
+
+.btn-primary-2{
+  box-shadow: 0px 5px hsl(35, 11%, 61%);
+  background: hsl(45, 7%, 89%);
+  color: #000;
+}
+
+.btn-secondary-2{
+  box-shadow: 0px 5px hsl(185, 58%, 25%);
+  background: hsl(185, 42%, 37%);
+  color:hsl(30, 25%, 89%);
+}
+
+.btn-ball-2,.btn-warning-2{
+background: hsl(25, 98%, 40%);
+}
+
+.btn-warning-2{
+  box-shadow: 0px 5px hsl(25, 99%, 27%);
+  color:white;
+}
+
+
+
+
+
+/* THEME 3*/
+.bg-3{
+  background: hsl(268, 75%, 9%);
+}
+
+
+/* Calc heading */
+.calc-text-color-3{
+   color:hsl(52, 100%, 62%);
+}
+
+
+/* Inside calc content */
+.calc-content-3{
+  background: hsl(268, 71%, 12%);
+}
+
+.calc-body-3{
+  background: hsl(268, 71%, 12%);
+}
+
+.number-header-theme-3{
+  color: hsl(52, 35%, 66%);
+}
+
+
+.btn-primary-3{
+  box-shadow: 0px 5px hsl(285, 91%, 52%);
+  background: hsl(281, 89%, 26%);
+  color: #000;
+}
+
+.btn-secondary-3{
+  box-shadow: 0px 5px hsl(290, 70%, 36%);
+  background: hsl(268, 47%, 21%);
+  color:hsl(30, 25%, 89%);
+}
+
+.btn-ball-3,.btn-warning-3{
+ background: hsl(176, 100%, 44%);
+}
+
+.btn-warning-3{
+  box-shadow: 0px 5px hsl(177, 92%, 70%);
+  color:white;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.disable-highlight{
+  user-select: none; /* supported by Chrome and Opera */
+ -webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+ -moz-user-select: none; /* Firefox */
+ -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+@media (max-width: 500px){
+body{
+  height: 840px;
+}
+}
+
